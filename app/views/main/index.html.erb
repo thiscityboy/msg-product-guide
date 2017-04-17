@@ -1,0 +1,118 @@
+ <style>
+     html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #F6F7EB;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        background: #F6F7EB;
+    }
+    .swiper-slide {
+        font-size: 18px;
+        color:#fff;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 100px 60px;
+    }
+    .parallax-bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 130%;
+        height: 100%;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center;
+    }
+    .swiper-slide .title {
+        font-size: 41px;
+        font-weight: 300;
+        color: grey;
+    }
+    .swiper-slide .subtitle {
+        font-size: 21px;
+        color: grey;
+    }
+    .swiper-slide .text {
+        font-size: 14px;
+        max-width: 400px;
+        line-height: 1.3;
+    }
+</style>
+
+
+ <div class="header animated slideInDown">
+        <img src="<%= asset_path'logo.png' %>", width="60">
+    </div>
+    
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="parallax-bg">
+            <%= image_tag "pattern.png", data: { swiper_parallax: "-33%" } %>
+        </div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="circle-one" data-swiper-parallax="-100"><%= image_tag "circle1.png" %></div>
+                <div class="circle-two" data-swiper-parallax="-500"><%= image_tag "circle2.png" %></div>
+                <div class="hat animated slideInUp" data-swiper-parallax="-700">
+                    <%= image_tag "hat.png", width: "250", data: { swiper_parallax: "-1100" } %>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="circle-one" data-swiper-parallax="-100"><%= image_tag "circle1.png" %></div>
+                <div class="circle-two" data-swiper-parallax="-500"><%= image_tag "circle2.png" %></div>
+                <div class="hat animated slideInUp" data-swiper-parallax="-700">
+                    <%= image_tag "hoodies.png", width: "250", data: { swiper_parallax: "-1100" } %>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="circle-one" data-swiper-parallax="-100"><%= image_tag "circle1.png" %></div>
+                <div class="circle-two" data-swiper-parallax="-500"><%= image_tag "circle2.png" %></div>
+                <div class="hat animated slideInUp" data-swiper-parallax="-700">
+                    <%= image_tag "shoes.png", width: "250", data: { swiper_parallax: "-1100" } %>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="circle-one" data-swiper-parallax="-100"><%= image_tag "circle1.png" %></div>
+                <div class="circle-two" data-swiper-parallax="-500"><%= image_tag "circle2.png" %></div>
+                <div class="hat animated slideInUp" data-swiper-parallax="-700">
+                    <%= image_tag "t-shirts.png", width: "250", data: { swiper_parallax: "-1100" } %>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="circle-one" data-swiper-parallax="-100"><%= image_tag "circle1.png" %></div>
+                <div class="circle-two" data-swiper-parallax="-500"><%= image_tag "circle2.png" %></div>
+                <div class="hat animated slideInUp" data-swiper-parallax="-700">
+                    <%= image_tag "sunglasses.png", width: "250", data: { swiper_parallax: "-1100" } %>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+ <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        paginationType: "progress",
+        watchSlidesProgress: true,
+        watchSlidesVisibility: true,
+        preloadImages: true,
+        centeredSlides: true,
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        spaceBetween: 340,
+        parallax: true,
+        speed: 400,
+    });
+    </script>

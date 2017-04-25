@@ -1,3 +1,52 @@
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #F6F7EB;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        background: #F6F7EB;
+    }
+    .swiper-slide {
+        font-size: 18px;
+        color:#fff;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 100px 60px;
+    }
+    .parallax-bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 130%;
+        height: 100%;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center;
+    }
+    .swiper-slide .title {
+        font-size: 41px;
+        font-weight: 300;
+        color: grey;
+    }
+    .swiper-slide .subtitle {
+        font-size: 21px;
+        color: grey;
+    }
+    .swiper-slide .text {
+        font-size: 14px;
+        max-width: 400px;
+        line-height: 1.3;
+    }
+
 .header {
   position: absolute;
   width: 100%;
@@ -8,10 +57,34 @@
   z-index: 10;
 }
 
+.subhead {
+  position: absolute;
+  width: 100%;
+  font-size: 1.2em;
+  text-align: center;
+  height: auto;
+  top: 16%;
+  left: 10%;
+  margin-left: -10%;
+  z-index: 10;
+}
+
+.cta {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -30%;
+  z-index: 10;
+}
+
+
 .circle-one img {
   position: absolute;
   z-index: 0;
   width: 160%;
+  margin-top: 20%;
   opacity: .8;
   left: -120px;
 }
@@ -19,28 +92,33 @@
 .circle-two img {
   position: absolute;
   z-index: 0;
+  top: 10%;
   width: 120%;
   opacity: .6;
 }
 
 
-.sunglasses, .hat {
-	margin-top: 70px;
-	margin-left: 20px;
+.hat {
+  margin-top: 40%;
+	margin-left: 10%;
 }
 
+.hoodie {
+  margin-top: 10%;
+  margin-left: 1%;
+}
 
 .shirt {
-	margin-top: 30px;
+  margin-top: 20%;
 	margin-left: 5px;
 }
 
 .sunglasses {
-	margin-top: 70px;
+	margin-top: 50%;
 	margin-left: 5px;
 }
 
 .shoes {
-	margin-top: 70px;
-	margin-left: 5px;
+  margin-top: 40%;
+	margin-left: 2%;
 }

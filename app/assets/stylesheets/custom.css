@@ -3,18 +3,34 @@
         height: 100%;
     }
     body {
-        background: #F6F7EB;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-family: 'Open Sans', sans-serif;
         font-size: 14px;
         color:#000;
         margin: 0;
         padding: 0;
+        background: linear-gradient(49deg, #6ce3ce, #729eda);
+        background-size: 400% 400%;
+        -webkit-animation: gradientBackground 17s ease infinite;
+        animation: gradientBackground 17s ease infinite;
+      }
+      @-webkit-keyframes gradientBackground {
+          0%{background-position:0% 97%}
+          50%{background-position:100% 4%}
+          100%{background-position:0% 97%}
+      }
+      @keyframes gradientBackground { 
+          0%{background-position:0% 97%}
+          50%{background-position:100% 4%}
+          100%{background-position:0% 97%}
+      }
     }
+
+
     .swiper-container {
         width: 100%;
         height: 100%;
-        background: #F6F7EB;
     }
+
     .swiper-slide {
         font-size: 18px;
         color:#fff;
@@ -22,6 +38,7 @@
         box-sizing: border-box;
         padding: 100px 60px;
     }
+
     .parallax-bg {
         position: absolute;
         left: 0;
@@ -32,15 +49,18 @@
         background-size: cover;
         background-position: center;
     }
+
     .swiper-slide .title {
         font-size: 41px;
         font-weight: 300;
         color: grey;
     }
+
     .swiper-slide .subtitle {
         font-size: 21px;
         color: grey;
     }
+
     .swiper-slide .text {
         font-size: 14px;
         max-width: 400px;
@@ -51,29 +71,31 @@
   position: absolute;
   width: 100%;
   height: auto;
-  top: 15px;
+  top: 20px;
   left: 50%;
-  margin-left: -30px;
+  margin-left: -36px;
   z-index: 10;
 }
 
 .subhead {
   position: absolute;
   width: 100%;
-  font-size: 1.2em;
+  font-size: 1.1em;
   text-align: center;
   height: auto;
-  top: 16%;
+  top: 20%;
   left: 10%;
   margin-left: -10%;
   z-index: 10;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
 }
 
 .cta {
   position: absolute;
   width: 100%;
   height: auto;
-  bottom: 5%;
+  bottom: 8%;
   left: 50%;
   margin-left: -30%;
   z-index: 10;
@@ -87,30 +109,79 @@
   margin-top: 20%;
   opacity: .8;
   left: -120px;
+  opacity: .5;
+  -webkit-opacity: .2;
+  filter:blur(2px);
+  -webkit-filter:blur(2px);
+  -webkit-animation: circleOne 90s ease-in-out infinite;
+  animation: circleOne 90s ease-in-out infinite;  
+
 }
+
+      @-webkit-keyframes circleOne {
+          0%{
+            transform: rotate(0deg);
+          }
+          100%{
+            transform: rotate(180deg);
+          }
+      }
+      @keyframes circleOne { 
+          0%{
+            transform: rotate(0deg);
+          }
+          100%{
+            transform: rotate(180deg);
+          }
+      }
+
 
 .circle-two img {
   position: absolute;
   z-index: 0;
   top: 10%;
   width: 120%;
-  opacity: .6;
+  opacity: .4;
+  -webkit-opacity: .4;
+  filter:blur(3px);
+  -webkit-filter:blur(3px);
+  -webkit-animation: circleTwo 50s ease-in-out infinite;
+  animation: circleTwo 50s ease-in-out infinite;  
+
+}
+
+      @-webkit-keyframes circleTwo {
+          0%{
+            transform: rotate(0deg);
+          }
+          100%{
+            transform: rotate(-180deg);
+          }
+      }
+      @keyframes circleTwo { 
+          0%{
+            transform: rotate(0deg);
+          }
+          100%{
+            transform: rotate(-180deg);
+          }
+      
 }
 
 
 .hat {
   margin-top: 40%;
-	margin-left: 10%;
+	margin-left: 5%;
 }
 
 .hoodie {
-  margin-top: 10%;
+  margin-top: 14%;
   margin-left: 1%;
 }
 
 .shirt {
-  margin-top: 20%;
-	margin-left: 5px;
+  margin-top: 28%;
+	margin-left: 0%;
 }
 
 .sunglasses {
@@ -120,5 +191,40 @@
 
 .shoes {
   margin-top: 40%;
-	margin-left: 2%;
+	margin-left: 0%;
 }
+
+.btn {
+  background: #000000;
+  background-image: -webkit-linear-gradient(top, #000000, #131920);
+  background-image: -moz-linear-gradient(top, #000000, #131920);
+  background-image: -ms-linear-gradient(top, #000000, #131920);
+  background-image: -o-linear-gradient(top, #000000, #131920);
+  background-image: linear-gradient(to bottom, #000000, #131920);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 14px 20px 14px 20px;
+  width: 50%;
+  font-family: 'Cabin', sans-serif;
+}
+
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  animation-delay: 1s;
+  animation-timing-function: ease-in;
+
+}
+
+/*.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+  animation-delay: 3s;
+
+}*/
+

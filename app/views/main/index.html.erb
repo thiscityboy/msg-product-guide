@@ -1,48 +1,67 @@
 
+<style>
+/* unvisited link */
+a:link {
+    text-decoration: none;
+}
+/* visited link */
+a:visited {
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    text-decoration: none;
+}
+</style>
 
 
- <div class="header animated slideInDown">
-        <img src="<%= asset_path'logo.png' %>", width="60">
+
+ <div class="header animated fadeInDown">
+    <img src="<%= asset_path'style-logo.svg' %>", width="70">
  </div>
- <div class="subhead animated slideInDown">
-    Swipe through to view the collection
+
+ <div class="subhead animated fadeIn">
+    Swipe to view the collection
  </div>   
     <!-- Swiper -->
     <div class="swiper-container">
-        <div class="parallax-bg">
-            <%= image_tag "pattern.png", data: { swiper_parallax: "-33%" } %>
-        </div>
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <div class="circle-one animated fadeIn" data-swiper-parallax="-100"><%= image_tag "circle1.png" %></div>
-                <div class="circle-two animated fadeIn" data-swiper-parallax="-500"><%= image_tag "circle2.png" %></div>
-                <div class="hat animated slideInUp" data-swiper-parallax="-700">
-                    <%= image_tag "hat.png", width: "250", data: { swiper_parallax: "-1100" } %>
+                <div class="circle-one animated fadeIn" data-swiper-parallax="-100"><%= image_tag "circle1.svg" %></div>
+                <div class="circle-two animated fadeIn" data-swiper-parallax="-700"><%= image_tag "circle3.svg" %></div>
+                <div class="hat animated fadeIn" data-swiper-parallax="-1000">
+                    <%= image_tag "hat2.png", width: "250", data: { swiper_parallax: "-1100" } %>
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="circle-one" data-swiper-parallax="-100"><%= image_tag "circle1.png" %></div>
-                <div class="circle-two" data-swiper-parallax="-500"><%= image_tag "circle2.png" %></div>
+                <div class="circle-one" data-swiper-parallax="-100"><%= image_tag "circle3.svg" %></div>
+                <div class="circle-two" data-swiper-parallax="-500"><%= image_tag "circle4.svg" %></div>
                 <div class="hoodie animated slideInUp" data-swiper-parallax="-700">
-                    <%= image_tag "hoodies.png", width: "250", data: { swiper_parallax: "-1100" } %>
+                    <%= image_tag "hoodie2.png", width: "250", data: { swiper_parallax: "-1100" } %>
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="circle-one" data-swiper-parallax="-100"><%= image_tag "circle1.png" %></div>
+                <div class="circle-one" data-swiper-parallax="-100"><%= image_tag "circle1.svg" %></div>
                 <div class="circle-two" data-swiper-parallax="-500"><%= image_tag "circle2.png" %></div>
                 <div class="shoes animated slideInUp" data-swiper-parallax="-700">
                     <%= image_tag "shoes.png", width: "250", data: { swiper_parallax: "-1100" } %>
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="circle-one" data-swiper-parallax="-100"><%= image_tag "circle1.png" %></div>
+                <div class="circle-one" data-swiper-parallax="-100"><%= image_tag "circle1.svg" %></div>
                 <div class="circle-two" data-swiper-parallax="-500"><%= image_tag "circle2.png" %></div>
                 <div class="shirt animated slideInUp" data-swiper-parallax="-700">
                     <%= image_tag "t-shirts.png", width: "250", data: { swiper_parallax: "-1100" } %>
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="circle-one" data-swiper-parallax="-100"><%= image_tag "circle1.png" %></div>
+                <div class="circle-one" data-swiper-parallax="-100"><%= image_tag "circle1.svg" %></div>
                 <div class="circle-two" data-swiper-parallax="-500"><%= image_tag "circle2.png" %></div>
                 <div class="sunglasses animated slideInUp" data-swiper-parallax="-700">
                     <%= image_tag "sunglasses.png", width: "250", data: { swiper_parallax: "-1100" } %>
@@ -51,8 +70,8 @@
         </div>
     
 
-    <div class="cta animated slideInUp">
-        <a href="https://mp.vibescm.com/c/vcweyq" target="_parent"><img src="<%= asset_path'addtowallet.png' %>", width="220"></a>
+    <div class="cta animated fadeInUp">
+        <a href="https://mp.vibescm.com/c/ebf2tm"><div class="btn">ADD TO WALLET</div></a>
     </div>
  
         <!-- Add Pagination -->

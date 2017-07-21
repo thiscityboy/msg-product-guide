@@ -699,7 +699,7 @@ body {
   width: 100%;
   height: auto;
   bottom: 14%;
-  left: 50%;
+  left: 55%;
   margin-left: -30%;
   z-index: 10;
 }
@@ -797,6 +797,14 @@ body {
 }
 
 /* line 201, /Users/scottanthonygaletto/Dev/_POCS/msg-product-guide-poc/app/assets/stylesheets/custom.scss */
+.hotspot {
+  position: absolute;
+  z-index: 999;
+  margin: 30px 0px 0px 150px;
+  opacity: .7;
+}
+
+/* line 208, /Users/scottanthonygaletto/Dev/_POCS/msg-product-guide-poc/app/assets/stylesheets/custom.scss */
 .btn {
   background: #000000;
   background-image: -webkit-linear-gradient(top, #000000, #131920);
@@ -815,7 +823,7 @@ body {
   font-family: 'Cabin', sans-serif;
 }
 
-/* line 220, /Users/scottanthonygaletto/Dev/_POCS/msg-product-guide-poc/app/assets/stylesheets/custom.scss */
+/* line 227, /Users/scottanthonygaletto/Dev/_POCS/msg-product-guide-poc/app/assets/stylesheets/custom.scss */
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
@@ -823,14 +831,14 @@ body {
   animation-timing-function: ease-in;
 }
 
-/* line 228, /Users/scottanthonygaletto/Dev/_POCS/msg-product-guide-poc/app/assets/stylesheets/custom.scss */
+/* line 235, /Users/scottanthonygaletto/Dev/_POCS/msg-product-guide-poc/app/assets/stylesheets/custom.scss */
 .shopSecondary {
   position: absolute;
   font-family: 'Cabin', sans-serif;
   width: 100%;
   height: auto;
   bottom: 8%;
-  left: 50%;
+  left: 55%;
   margin-left: -25%;
   z-index: 10;
   font-size: .8em;

@@ -8,7 +8,6 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href="https://fonts.googleapis.com/css?family=Cabin|Open+Sans|Raleway" rel="stylesheet">
-<script src="https://use.fontawesome.com/1020cc9115.js"></script>
 </head>
 
   <body>
@@ -44,5 +43,24 @@ window.onclick = function(event) {
     }
 }
 </script>
+
+    <script src="https://use.fontawesome.com/1020cc9115.js"></script>
+
+ <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        paginationType: "progress",
+        watchSlidesProgress: true,
+        watchSlidesVisibility: true,
+        preloadImages: true,
+        centeredSlides: true,
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        paginationType: 'bullets',
+        spaceBetween: 340,
+        parallax: true,
+        speed: 400,
+    });
+    </script>
   </body>
 </html>

@@ -12,6 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require swiper.jquery
+//= require swiper
 //= require turbolinks
 //= require_tree .

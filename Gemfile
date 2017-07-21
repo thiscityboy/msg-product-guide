@@ -17,6 +17,7 @@ gem 'jbuilder', '~> 2.5'
 gem "font-awesome-rails"
 gem 'pg'
 gem 'forest_liana'
+gem  'izimodal'
 
 group :development, :test do
   gem 'sqlite3'

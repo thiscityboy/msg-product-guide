@@ -1,3 +1,32 @@
-// Place all the styles related to the main controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.modalTitle {
+	font-family: 'Cabin', sans-serif;
+	font-size: 1.5em;
+	color: grey;
+}
+
+.modalSubhead {
+	font-family: 'Cabin', sans-serif;
+	font-size: .9em;
+	color: grey;
+}
+
+
+img.modalPic {
+	border: .5px solid grey;
+}
+
+ul.modalDetails li {
+	font-family: 'Cabin', sans-serif;
+	font-size: .9em;
+	color: grey;
+}
+
+.spacer-10 {
+	height: 10px;
+}
+
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: white;
+}

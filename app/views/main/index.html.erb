@@ -18,13 +18,22 @@ a:hover {
 a:active {
     text-decoration: none;
 }
+
+img.hatcombo {
+    width: 500px;
+}
+
 </style>
 
+
+
+<div id="myModal" class="modal animated fadeIn"><%= render 'layouts/modal' %></div>
 
 
  <div class="header animated fadeInDown">
     <img src="<%= asset_path'style-logo.svg' %>", width="70">
  </div>
+
 
  <div class="subhead animated fadeIn">
     Swipe to view the collection
@@ -36,9 +45,11 @@ a:active {
                 <div class="circle-one animated fadeIn" data-swiper-parallax="-100"><%= image_tag "circle1.svg" %></div>
                 <div class="circle-two animated fadeIn" data-swiper-parallax="-700"><%= image_tag "circle3.svg" %></div>
                 <div class="hat animated fadeIn" data-swiper-parallax="-1000">
-                    <%= image_tag "hat2.png", width: "250", data: { swiper_parallax: "-1100" } %>
-                </div>
-            </div>
+                    <a id="myBtn">
+                        <%= image_tag "hat2.png", width: "250", data: { swiper_parallax: "-1100" } %>
+                    </a>
+                 </div>
+              </div>
             <div class="swiper-slide">
                 <div class="circle-one" data-swiper-parallax="-100"><%= image_tag "circle3.svg" %></div>
                 <div class="circle-two" data-swiper-parallax="-500"><%= image_tag "circle4.svg" %></div>
@@ -71,12 +82,18 @@ a:active {
     
 
     <div class="cta animated fadeInUp">
-        <a href="https://mp.vibescm.com/c/ebf2tm"><div class="btn">ADD TO WALLET</div></a>
+        <a href="https://mp.vibescm.com/c/ebf2tm"><div class="btn btn-custom">ADD TO WALLET</div></a>
     </div>
- 
-        <!-- Add Pagination -->
+
+            <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
+
+    <div class="shopSecondary"><i class="fa fa-shopping-bag" aria-hidden="true"></i>&nbsp;&nbsp;Shop these styles now</div>
+ 
+
     </div>
+
+
 
  <!-- Initialize Swiper -->
     <script>
@@ -88,6 +105,7 @@ a:active {
         centeredSlides: true,
         pagination: '.swiper-pagination',
         paginationClickable: true,
+        paginationType: 'bullets',
         spaceBetween: 340,
         parallax: true,
         speed: 400,

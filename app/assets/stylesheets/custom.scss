@@ -23,7 +23,7 @@
           50%{background-position:100% 4%}
           100%{background-position:0% 97%}
       }
-    }
+    
 
 
     .swiper-container {
@@ -77,6 +77,10 @@
   z-index: 10;
 }
 
+.btn.btn-custom {
+  padding: 16px 14px;
+}
+
 .subhead {
   position: absolute;
   width: 100%;
@@ -95,7 +99,7 @@
   position: absolute;
   width: 100%;
   height: auto;
-  bottom: 8%;
+  bottom: 14%;
   left: 50%;
   margin-left: -30%;
   z-index: 10;
@@ -219,6 +223,19 @@
   animation-delay: 1s;
   animation-timing-function: ease-in;
 
+}
+
+.shopSecondary {
+  position: absolute;
+  font-family: 'Cabin', sans-serif;
+  width: 100%;
+  height: auto;
+  bottom: 8%;
+  left: 50%;
+  margin-left: -25%;
+  z-index: 10;  
+  font-size: .8em;
+  color: black;
 }
 
 /*.slideInUp {

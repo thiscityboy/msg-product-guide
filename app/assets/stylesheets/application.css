@@ -12,7 +12,6 @@
  *
  *= require swiper
  *= require custom
- *= require bootstrap
  *= require animate
  *= require_tree .
  *= require_self

@@ -27,7 +27,7 @@ img.hatcombo {
 
 
 
-<div id="myModal" class="modal animated fadeIn"><%= render 'layouts/modal' %></div>
+<div id="myModal" class="modal animated bounceInDown"><%= render 'layouts/modal' %></div>
 
 
  <div class="header animated fadeInDown">
@@ -45,7 +45,13 @@ img.hatcombo {
                 <div class="circle-one animated fadeIn" data-swiper-parallax="-100"><%= image_tag "circle1.svg" %></div>
                 <div class="circle-two animated fadeIn" data-swiper-parallax="-700"><%= image_tag "circle3.svg" %></div>
                 <div class="hat animated fadeIn" data-swiper-parallax="-1000">
+                <div class="hotspot">
                     <a id="myBtn">
+                    <img src="<%= asset_path('hotspot.gif') %>">
+                    </a>
+                </div>
+
+                    
                         <%= image_tag "hat2.png", width: "250", data: { swiper_parallax: "-1100" } %>
                     </a>
                  </div>

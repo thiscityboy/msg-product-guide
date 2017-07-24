@@ -699,7 +699,7 @@ body {
   width: 100%;
   height: auto;
   bottom: 14%;
-  left: 55%;
+  left: 50%;
   margin-left: -30%;
   z-index: 10;
 }
@@ -841,7 +841,7 @@ body {
   left: 55%;
   margin-left: -25%;
   z-index: 10;
-  font-size: .8em;
+  font-size: .9em;
   color: black;
 }
 
@@ -1014,6 +1014,8 @@ body {
 .pulse {
   -webkit-animation-name: pulse;
   animation-name: pulse;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes rubberBand {
@@ -4192,6 +4194,53 @@ body {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
 }
+/**
+ * http://applemusic.tumblr.com/
+ * https://jsfiddle.net/xq56dmrh/
+ */
+
+/** Ultra Light */
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 100;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff");
+}
+
+/** Thin */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 200;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff");
+}
+
+/** Regular */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+/** Medium */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 500;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff");
+}
+
+/** Semi Bold */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 600;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff");
+}
+
+/** Bold */ 
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 700;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+}
 /* line 1, /Users/scottanthonygaletto/Dev/_POCS/msg-product-guide-poc/app/assets/stylesheets/main.scss */
 .modalTitle {
   font-family: 'Cabin', sans-serif;
@@ -4233,7 +4282,7 @@ ul.modalDetails li {
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 999; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -4265,20 +4314,6 @@ ul.modalDetails li {
     color: black;
     text-decoration: none;
     cursor: pointer;
-}
-.modal {
-    display: none;
-    background: rgba(0, 0, 0, .30);
-    z-index: 999;
-}
-
-.modal .modal-dialog {
-    position: relative;
-    margin: 30px auto;
-    width: 1100px;
-    border-radius: 6px;
-    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
-            box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
 }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files

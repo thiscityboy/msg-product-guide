@@ -1,0 +1,20 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-dasharray:10.14 5.07;}</style></defs><title>animatedhotspot</title>
+
+
+
+<circle class="cls-1" cx="51" cy="49" r="46">
+  	<animateTransform attributeName="transform"
+    		type="rotate"
+    		from="0 50 50"
+    		to="360 50 50"
+    		dur="10s"
+    		repeatCount="indefinite"
+    	/>
+</circle>
+
+<circle cx="51" cy="49" r="39">
+
+
+
+</circle>
+</svg>
